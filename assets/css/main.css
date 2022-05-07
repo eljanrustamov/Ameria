@@ -38,4 +38,94 @@ body {
   font-family: var(--font-main);
   overflow: hidden;
 }
+
+section#contact {
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary-light));
+}
+
+section#contact .contact-left {
+  color: var(--color-white);
+}
+
+section#contact .contact-left .head-text span {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+section#contact .contact-left .head-text h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+section#contact .contact-left .contact-info {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+section#contact .contact-left .socials .icon-holder {
+  width: 3.438rem;
+  height: 3.438rem;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  padding: 0;
+  font-size: 1.8rem;
+}
+
+section#contact .contact-left .socials .icon-holder a {
+  color: var(--color-white);
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding-top: 2px;
+}
+
+section#contact .contact-left .socials .icon-holder .fb {
+  background-color: var(--color-white);
+  border-radius: 50%;
+  height: 2.6rem;
+  width: 2.6rem;
+  font-size: 2.8rem;
+  color: #3B5998;
+}
+
+section#contact .contact-left .socials .icon-holder .fb:hover {
+  background-color: #3B5998;
+  color: var(--color-white);
+}
+
+section#contact .contact-left .socials .icon-holder .ig {
+  background-color: #C13584;
+  border-radius: 50%;
+  height: 2.864rem;
+  width: 2.864rem;
+}
+
+section#contact .contact-left .socials .icon-holder .ig:hover {
+  background-color: var(--color-white);
+  color: #C13584;
+}
+
+section#contact .contact-left .socials .icon-holder .yt {
+  background-color: #FF0000;
+  border-radius: 50%;
+  height: 2.864rem;
+  width: 2.864rem;
+}
+
+section#contact .contact-left .socials .icon-holder .yt:hover {
+  background-color: var(--color-white);
+  color: #FF0000;
+}
+
+section#contact .contact-left .socials .icon-holder .tw {
+  background-color: #1DA1F2;
+  border-radius: 50%;
+  height: 2.864rem;
+  width: 2.864rem;
+}
+
+section#contact .contact-left .socials .icon-holder .tw:hover {
+  background-color: var(--color-white);
+  color: #1DA1F2;
+}
 /*# sourceMappingURL=main.css.map */
