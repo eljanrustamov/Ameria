@@ -1,0 +1,41 @@
+:root {
+  --color-primary: #008010;
+  --color-primary-light: #37c955;
+  --color-primary-dark: #185a23;
+  --color-dark: #0b1d24;
+  --color-white: #f2f2f2;
+}
+
+:root {
+  --font-main: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 60px 0;
+}
+
+body {
+  font-family: var(--font-main);
+  overflow: hidden;
+}
+/*# sourceMappingURL=main.css.map */

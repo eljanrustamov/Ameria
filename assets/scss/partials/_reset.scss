@@ -1,0 +1,28 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style-type: none
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    padding: 60px 0;
+}
+
+body{
+    font-family: var(--font-main);
+    overflow: hidden;
+}
