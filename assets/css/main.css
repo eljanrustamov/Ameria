@@ -40,7 +40,7 @@ body {
 }
 
 footer {
-  background-color: #0B1D24;
+  background-color: var(--color-dark);
 }
 
 .footer {
@@ -65,7 +65,7 @@ footer {
   line-height: 3.375rem;
   letter-spacing: 0.05em;
   text-transform: capitalize;
-  color: #F2F2F2;
+  color: var(--color-white);
 }
 
 .footer button {
@@ -74,7 +74,7 @@ footer {
   cursor: pointer;
   padding-bottom: .8rem;
   margin-left: -0.188rem;
-  background: #185A23;
+  background: var(--color-primary-dark);
   border: none;
   font-weight: lighter;
   border-radius: 0.313rem;
@@ -94,7 +94,7 @@ footer {
 }
 
 .footer .input input {
-  color: #0B1D24;
+  color: var(--color-dark);
   padding-left: 1.875rem;
   width: 15.625rem;
   height: 3.125rem;
@@ -102,7 +102,7 @@ footer {
   border-radius: 0.313rem;
   width: 40%;
   height: 6.25rem;
-  background: rgba(55, 201, 85, 0.75);
+  background: var(--color-primary-light);
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   color: rgba(11, 29, 36, 0.75);
@@ -138,11 +138,11 @@ footer {
   line-height: 2.813rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #FFFFFF;
+  color: var(--color-white);
 }
 
 .footer .footer-main a:hover {
-  color: #185A23 !important;
+  color: var(--color-primary-dark) !important;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -160,13 +160,13 @@ footer {
   height: 2.5rem;
   border-radius: 50%;
   background: rgba(55, 201, 85, 0.75);
-  color: #0B1D24;
+  color: var(--color-dark);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .footer .footer-social-icons li:hover {
-  background-color: #0B1D24;
+  background-color: var(--color-dark);
   color: rgba(55, 201, 85, 0.75);
   -webkit-transition: 1s;
   transition: 1s;
