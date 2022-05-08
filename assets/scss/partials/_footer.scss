@@ -75,7 +75,7 @@ footer{
         }
     }
 
-    a{
+    .footer-main a{
         text-decoration: none;
         margin: 0 40px 40px 0;
 
@@ -87,18 +87,18 @@ footer{
         color: #FFFFFF;
 
     }
-    a:hover{
+    .footer-main a:hover{
         color: #185A23 !important;
         transition: 1s;
     }
     
-    .FooterSocialIcons{
+    .footer-social-icons{
         list-style: none;
         font-size: 1.25rem;
 
         li{
             display: inline-block;
-            padding-top: 0.188rem;
+            padding-top: 0.35rem;
             margin-right: 2rem;
             
             width: 2.5rem;
@@ -107,10 +107,8 @@ footer{
             background: rgba(55, 201, 85, 0.75);
             color: #0B1D24;
             transition: 0.5s;
+
             
-            i{
-                vertical-align: -0.13rem !important;
-            }
         }
         li:hover{
             background-color: #0B1D24;

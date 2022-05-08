@@ -130,7 +130,7 @@ footer {
   color: white !important;
 }
 
-.footer a {
+.footer .footer-main a {
   text-decoration: none;
   margin: 0 40px 40px 0;
   font-style: normal;
@@ -142,20 +142,20 @@ footer {
   color: #FFFFFF;
 }
 
-.footer a:hover {
+.footer .footer-main a:hover {
   color: #185A23 !important;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.footer .FooterSocialIcons {
+.footer .footer-social-icons {
   list-style: none;
   font-size: 1.25rem;
 }
 
-.footer .FooterSocialIcons li {
+.footer .footer-social-icons li {
   display: inline-block;
-  padding-top: 0.188rem;
+  padding-top: 0.35rem;
   margin-right: 2rem;
   width: 2.5rem;
   height: 2.5rem;
@@ -166,11 +166,7 @@ footer {
   transition: 0.5s;
 }
 
-.footer .FooterSocialIcons li i {
-  vertical-align: -0.13rem !important;
-}
-
-.footer .FooterSocialIcons li:hover {
+.footer .footer-social-icons li:hover {
   background-color: #0B1D24;
   color: rgba(55, 201, 85, 0.75);
   -webkit-transition: 1s;
