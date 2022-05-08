@@ -50,8 +50,8 @@ footer {
 .footer .join h2 {
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 72px;
+  font-size: 3rem;
+  line-height: 4.5rem;
 }
 
 .footer hr {
@@ -61,23 +61,23 @@ footer {
 .footer .text-span span {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 54px;
+  font-size: 2.25rem;
+  line-height: 3.375rem;
   letter-spacing: 0.05em;
   text-transform: capitalize;
   color: #F2F2F2;
 }
 
 .footer button {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   cursor: pointer;
   padding-bottom: .8rem;
-  margin-left: -3px;
+  margin-left: -0.188rem;
   background: #185A23;
   border: none;
   font-weight: lighter;
-  border-radius: 5px;
+  border-radius: 0.313rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -95,21 +95,21 @@ footer {
 
 .footer .input input {
   color: #0B1D24;
-  padding-left: 30px;
-  width: 250px;
-  height: 50px;
+  padding-left: 1.875rem;
+  width: 15.625rem;
+  height: 3.125rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.313rem;
   width: 40%;
-  height: 100px;
+  height: 6.25rem;
   background: rgba(55, 201, 85, 0.75);
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   color: rgba(11, 29, 36, 0.75);
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
   letter-spacing: 0.05em;
   text-transform: capitalize;
 }
@@ -135,8 +135,8 @@ footer {
   margin: 0 40px 40px 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 45px;
+  font-size: 1.875rem;
+  line-height: 2.813rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #FFFFFF;
@@ -150,20 +150,24 @@ footer {
 
 .footer .FooterSocialIcons {
   list-style: none;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .footer .FooterSocialIcons li {
   display: inline-block;
-  padding-top: 3px;
-  margin-right: 32px;
-  width: 40px;
-  height: 40px;
+  padding-top: 0.188rem;
+  margin-right: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background: rgba(55, 201, 85, 0.75);
   color: #0B1D24;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.footer .FooterSocialIcons li i {
+  vertical-align: -0.13rem !important;
 }
 
 .footer .FooterSocialIcons li:hover {
@@ -176,10 +180,10 @@ footer {
 }
 
 .footer img {
-  width: 150px;
+  width: 9.375rem;
 }
 
 .footer .info-about-site {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 /*# sourceMappingURL=main.css.map */
