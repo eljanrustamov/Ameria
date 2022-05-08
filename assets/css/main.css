@@ -55,7 +55,8 @@ section#contact .contact-left .switch {
   position: relative;
   display: inline-block;
   width: 85px;
-  height: 47px;
+  height: 48px;
+  z-index: 1;
 }
 
 section#contact .contact-left .switch input {
@@ -84,7 +85,7 @@ section#contact .contact-left .slider:before {
   color: var(--color-primary-dark);
   height: 40px;
   width: 40px;
-  left: 4px;
+  left: 5px;
   bottom: 4px;
   background-color: white;
   -webkit-transition: .4s;
@@ -92,7 +93,9 @@ section#contact .contact-left .slider:before {
 }
 
 section#contact .contact-left input:checked + .slider {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
+  -webkit-transform: translateX(31rem);
+  transform: translateX(31rem);
 }
 
 section#contact .contact-left input:focus + .slider {
@@ -118,8 +121,12 @@ section#contact .contact-left .map {
   position: absolute;
   background-color: var(--color-white);
   height: 45rem;
-  top: -5.813rem;
-  visibility: hidden;
+  padding-top: 5.3rem;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 section#contact .contact-left .map span {
@@ -133,6 +140,10 @@ section#contact .contact-left .map iframe {
   height: 58%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+section#contact .contact-left .active {
+  opacity: 1;
 }
 
 section#contact .contact-left .head-text span {

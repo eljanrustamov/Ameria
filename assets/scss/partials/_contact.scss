@@ -9,7 +9,8 @@ section#contact {
             position: relative;
             display: inline-block;
             width: 85px;
-            height: 47px;
+            height: 48px;
+            z-index: 1;
         }
 
         /* Hide default HTML checkbox */
@@ -40,7 +41,7 @@ section#contact {
             color: var(--color-primary-dark);
             height: 40px;
             width: 40px;
-            left: 4px;
+            left: 5px;
             bottom: 4px;
             background-color: white;
             -webkit-transition: .4s;
@@ -48,8 +49,10 @@ section#contact {
         }
 
         input:checked+.slider {
-            background-color: var(--color-primary-dark);
-
+            background-color: var(--color-primary-light);
+            -webkit-transform: translateX(31rem);
+            -ms-transform: translateX(31rem);
+            transform: translateX(31rem);
         }
 
         input:focus+.slider {
@@ -76,8 +79,11 @@ section#contact {
             position: absolute;
             background-color: var(--color-white);
             height: 45rem;
-            top: -5.813rem;
-            visibility: hidden;
+            padding-top: 5.3rem;
+            top: 0;
+            width: 100%;
+            opacity: 0;
+            transition: .4s;
 
             span {
                 font-size: 2.25rem;
@@ -92,7 +98,12 @@ section#contact {
             }
         }
 
+        .active {
+            opacity: 1;
+        }
+
         .head-text {
+
             span {
                 font-size: 2.25rem;
                 font-weight: bold;
@@ -105,12 +116,12 @@ section#contact {
         }
 
         .contact-info {
+
             font-size: 1.5rem;
             font-weight: 500;
         }
 
         .socials {
-            // width: 50%;
 
             .icon-holder {
                 width: 3.438rem;
