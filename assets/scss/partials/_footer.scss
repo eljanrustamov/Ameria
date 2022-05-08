@@ -2,7 +2,6 @@ footer{
     background-color: #0B1D24;
 }
 
-
 .footer {
     width: 100%;
     .join h2{
@@ -73,11 +72,13 @@ footer{
         &::placeholder{
             color: white !important;
         }
+        @media screen and (max-width: 768px) {
+            
+        }
     }
 
     .footer-main a{
         text-decoration: none;
-        margin: 0 40px 40px 0;
 
         font-style: normal;
         font-weight: 700;
