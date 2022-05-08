@@ -41,6 +41,8 @@ body {
 
 section#contact {
   background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary-light));
+  -webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+          clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 section#contact .contact-left {
@@ -120,7 +122,7 @@ section#contact .contact-left .slider.round:before {
 section#contact .contact-left .map {
   position: absolute;
   background-color: var(--color-white);
-  height: 45rem;
+  height: 5rem;
   padding-top: 5.3rem;
   top: 0;
   width: 100%;
@@ -133,6 +135,7 @@ section#contact .contact-left .map span {
   font-size: 2.25rem;
   font-weight: bold;
   color: var(--color-primary-dark);
+  opacity: 0;
 }
 
 section#contact .contact-left .map iframe {
@@ -140,10 +143,12 @@ section#contact .contact-left .map iframe {
   height: 58%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0;
 }
 
 section#contact .contact-left .active {
-  opacity: 1;
+  opacity: 1 !important;
+  height: 45rem;
 }
 
 section#contact .contact-left .head-text span {
