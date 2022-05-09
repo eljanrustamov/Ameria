@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.about1 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f0efef;
+}
+
+.about1 .about-us {
+  width: 100%;
+}
+
+.about1 .about-us h1 {
+  text-align: start;
+  font-size: 40px;
+  color: #075c07;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 50px;
+  margin-left: 45px;
+}
+
+.wrapper {
+  padding: 10px 10px;
+  margin: 60px auto;
+}
+
+.content {
+  width: 60%;
+  float: left;
+  text-align: left;
+  padding: 0px 30px;
+}
+
+.content h3 {
+  color: green;
+  letter-spacing: 1px;
+}
+
+.content p {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #000800;
+  margin-top: 20px;
+}
+
+.content .button a {
+  color: black;
+  background-color: green;
+  border: 1px solid green;
+  padding: 10px 35px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.content .button a:hover {
+  background-color: #f0efef;
+  color: #065206;
+}
+
+.video-section {
+  width: 40%;
+  margin-top: -64px;
+  float: right;
+  padding: 0px 40px;
+}
+
+section {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
