@@ -1,0 +1,240 @@
+section#contact {
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary-light));
+    clip-path: polygon(0% 10%,
+            100% 0%,
+            100% 90%,
+            0% 100%);
+
+    .contact-left {
+        color: var(--color-white);
+        position: relative;
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 85px;
+            height: 48px;
+            z-index: 1;
+        }
+
+        /* Hide default HTML checkbox */
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        /* The slider */
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "info";
+            text-align: center;
+            padding-top: 7px;
+            color: var(--color-primary-dark);
+            height: 40px;
+            width: 40px;
+            left: 5px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: var(--color-primary-light);
+            -webkit-transform: translateX(31rem);
+            -ms-transform: translateX(31rem);
+            transform: translateX(31rem);
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(36px);
+            -ms-transform: translateX(36px);
+            transform: translateX(36px);
+            content: "map";
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .map {
+            position: absolute;
+            background-color: var(--color-white);
+            height: 5rem;
+            padding-top: 5.3rem;
+            top: 0;
+            width: 100%;
+            opacity: 0;
+            transition: .4s;
+
+            span {
+                font-size: 2.25rem;
+                font-weight: bold;
+                color: var(--color-primary-dark);
+                opacity: 0;
+
+            }
+
+            iframe {
+                width: 100%;
+                height: 58%;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                opacity: 0;
+            }
+        }
+
+        .active {
+            opacity: 1 !important;
+            height: 45rem;
+        }
+
+        .head-text {
+
+            span {
+                font-size: 2.25rem;
+                font-weight: bold;
+            }
+
+            h2 {
+                font-size: 4rem;
+                font-weight: bold;
+            }
+
+        }
+
+        .contact-info {
+
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .socials {
+
+            .icon-holder {
+                width: 3.438rem;
+                height: 3.438rem;
+                background-color: var(--color-white);
+                border-radius: 10px;
+                padding: 0;
+                font-size: 1.8rem;
+
+
+                a {
+                    color: var(--color-white);
+                    cursor: pointer;
+                    transition: .3s;
+                    padding-top: 2px;
+                }
+
+                .fb {
+                    background-color: var(--color-white);
+                    border-radius: 50%;
+                    height: 2.6rem;
+                    width: 2.6rem;
+                    font-size: 2.8rem;
+                    color: #3B5998;
+
+                    &:hover {
+                        background-color: #3B5998;
+                        color: var(--color-white);
+                    }
+                }
+
+                .ig {
+                    background-color: #C13584;
+                    border-radius: 50%;
+                    height: 2.864rem;
+                    width: 2.864rem;
+
+                    &:hover {
+                        background-color: var(--color-white);
+                        color: #C13584;
+                    }
+                }
+
+                .yt {
+                    background-color: #FF0000;
+                    border-radius: 50%;
+                    height: 2.864rem;
+                    width: 2.864rem;
+
+                    &:hover {
+                        background-color: var(--color-white);
+                        color: #FF0000;
+                    }
+                }
+
+                .tw {
+                    background-color: #1DA1F2;
+                    border-radius: 50%;
+                    height: 2.864rem;
+                    width: 2.864rem;
+
+                    &:hover {
+                        background-color: var(--color-white);
+                        color: #1DA1F2;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-right {
+        background-color: var(--color-white);
+        height: 45rem;
+
+        h2 {
+            color: var(--color-primary-dark);
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .form-element {
+            border: none;
+            background-color: #37c954bd;
+            color: var(--color-primary-dark);
+            border-radius: 0;
+            resize: none;
+            color: var(--color-primary-dark);
+            font-weight: bold;
+            font-size: 1.5rem;
+
+
+            &:focus {
+                outline: var(--color-primary-dark);
+            }
+
+            &::placeholder {
+                color: var(--color-primary-dark);
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+        }
+
+        input.form-element {
+            height: 5rem;
+        }
+    }
+}

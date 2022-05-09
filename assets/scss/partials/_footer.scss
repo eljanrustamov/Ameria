@@ -1,5 +1,5 @@
 footer{
-    background-color: var(--color-dark);
+    background: var(--color-dark);
 }
 
 .footer {
@@ -25,7 +25,7 @@ footer{
         color: var(--color-white);
     }
 
-    button{
+    .email-button{
         width: 6.25rem;
         height: 6.25rem;
         cursor: pointer;
@@ -37,14 +37,14 @@ footer{
         border-radius: 0.313rem;
         transition: 0.5s;
     }
-    button:hover{
+    .email-button:hover{
         transition: 0.5s;
         background: #12461a;
         // ^hover bg-color əlavə
     }
-    button::after {
+    .email-button::after {
         content: ' \2192';
-        font-size: 2.5rem;
+        font-size: 2.73rem;
     }
 
 
@@ -106,25 +106,78 @@ footer{
             width: 2.5rem;
             height: 2.5rem;
             border-radius: 50%;
-            background: rgba(55, 201, 85, 0.75);
+            background: linear-gradient(45deg, var(--color-primary-dark), var(--color-primary-light), var(--color-primary-dark) );
             color: var(--color-dark);
             transition: 0.5s;
 
             
         }
         li:hover{
+            background: linear-gradient(45deg, var(--color-primary-dark), var(--color-dark), var(--color-primary-dark) );
             background-color: var(--color-dark);
-            color: rgba(55, 201, 85, 0.75);
+            color: var(--color-primary-light);
             transition: 1s;
             transform: scale(1.3,1.3);
         }
     }
-
-    img{
-        width: 9.375rem;
-    }
-
     .info-about-site{
         font-size: 0.75rem;
+    }
+    
+    .footer-logo{
+        width: 12rem;
+    }
+
+
+    @media screen and (max-width: 1200px){
+        .my-5{
+            margin-top: 0.5rem!important;
+            margin-bottom: 2rem!important;
+        }
+        hr{
+            border: 1px solid rgba(242, 242, 242, 0.25);
+        }
+        .join .footer-text{
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        .text-span span{
+            font-size: 1.2rem;
+            margin: 0;
+            padding: 0;
+
+        }
+        .input input{
+            height: 2.125rem;
+            margin: 0;
+            padding: 0;
+            padding-left: 10px;
+        }
+        .email-button{
+            width: 3.25rem;
+            height: 2.125rem;            
+        }
+        .email-button::after{
+            font-size: 1.45rem;
+        }
+        .footer-main a{
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        .community{
+            font-size: 0.9rem;
+        }
+        .footer-social-icons li{
+            padding-top: 3.5px;
+            width: 1.5rem;
+            height: 1.5rem;
+            font-size: 0.75rem;
+        }
+        .info-about-site{
+            font-size: 0.5rem;
+        }
+        .footer-logo{
+            width: 8rem;
+        }
     }
 }
