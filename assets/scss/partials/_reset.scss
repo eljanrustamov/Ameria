@@ -1,28 +1,27 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
-ul{
+ul {
     list-style-type: none
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-section{
+section {
     padding: 60px 0;
 }
 
-body{
+body {
     font-family: var(--font-main);
     overflow: hidden;
 }

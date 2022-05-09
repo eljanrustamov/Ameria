@@ -39,6 +39,8 @@ body {
   overflow: hidden;
 }
 
+
+
 #hikes {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -187,6 +189,7 @@ body {
     padding: .5rem 1.6rem !important;
   }
 }
+
 
 section#contact {
   background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary-light));
