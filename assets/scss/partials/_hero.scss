@@ -1,0 +1,46 @@
+#hero {
+  height: 100vh;
+  // min-height: 700px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 5;
+
+  .cover {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(12, 35, 6, 0.4);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  .hero-content {
+    padding: 10rem 0;
+    text-align: center;
+    color: var(--color-white);
+    line-height: 1.5;
+
+    p {
+      font-size: 42px;
+    }
+    h1 {
+      font-size: 76px;
+      color: #fff;
+    }
+    button {
+      font-size: 20px;
+      padding: 0.7rem 1rem;
+    //   border-radius: 0.7rem;
+      background: transparent;
+      background-color: var(--color-primary-light);
+      color: var(--color-white);
+      border: none;
+    }
+  }
+}
+
+body {
+  height: 200vh;
+}

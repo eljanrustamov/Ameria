@@ -38,4 +38,153 @@ body {
   font-family: var(--font-main);
   overflow: hidden;
 }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 40px 0;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  z-index: 99;
+}
+
+header .logo a {
+  font-weight: 600;
+  font-size: 1.875rem;
+  color: var(--color-white);
+  position: relative;
+  z-index: 101;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .side-menu {
+  color: var(--color-white);
+}
+
+header .side-menu .open-btn {
+  font-size: 3.2rem;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+header .side-menu .close-btn {
+  display: none;
+  position: relative;
+  color: var(--color-dark);
+  font-size: 3.2rem;
+  cursor: pointer;
+  z-index: 999;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+header nav {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 100;
+  border-radius: 10px solid #f8f9fa;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+header nav ul {
+  line-height: 1.5;
+}
+
+header nav ul a {
+  font-size: 2.5rem;
+  color: var(--color-dark);
+}
+
+header nav ul a:hover {
+  color: var(--color-primary-light);
+}
+
+.scrolled {
+  padding: 20px 0;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.scrolled .logo a {
+  color: var(--color-primary);
+}
+
+.scrolled .side-menu {
+  color: var(--color-primary);
+}
+
+.hidden {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+}
+
+#hero {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 5;
+}
+
+#hero .cover {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(12, 35, 6, 0.4);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+#hero .hero-content {
+  padding: 10rem 0;
+  text-align: center;
+  color: var(--color-white);
+  line-height: 1.5;
+}
+
+#hero .hero-content p {
+  font-size: 42px;
+}
+
+#hero .hero-content h1 {
+  font-size: 76px;
+  color: #fff;
+}
+
+#hero .hero-content button {
+  font-size: 20px;
+  padding: 0.7rem 1rem;
+  background: transparent;
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
+  border: none;
+}
+
+body {
+  height: 200vh;
+}
 /*# sourceMappingURL=main.css.map */
