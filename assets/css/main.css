@@ -259,6 +259,7 @@ section#contact .contact-right form .form-input input {
   height: 100%;
   width: 100%;
   border: none;
+  outline: none;
   background-color: var(--color-white);
 }
 
@@ -270,7 +271,8 @@ section#contact .contact-right form .form-input input:valid + .label-name .conte
   color: var(--color-primary-dark);
 }
 
-section#contact .contact-right form .form-input input:focus + .label-name::after {
+section#contact .contact-right form .form-input input:focus + .label-name::after,
+section#contact .contact-right form .form-input input:valid + .label-name::after {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
@@ -304,6 +306,67 @@ section#contact .contact-right form .form-input .label-name::after {
 section#contact .contact-right form .form-input .label-name .content-name {
   position: absolute;
   bottom: 5px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+section#contact .contact-right form .form-area {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+section#contact .contact-right form .form-area textarea {
+  resize: none;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--color-white);
+  vertical-align: text-bottom;
+  padding-top: 80px;
+}
+
+section#contact .contact-right form .form-area textarea:focus + .label-text .content-text,
+section#contact .contact-right form .form-area textarea:valid + .label-text .content-text {
+  font-size: 1.5rem;
+  color: var(--color-primary-dark);
+}
+
+section#contact .contact-right form .form-area textarea:focus + .label-text::after,
+section#contact .contact-right form .form-area textarea:valid + .label-text::after {
+  -webkit-transform: translatey(70%);
+          transform: translatey(70%);
+  border-bottom: 4px solid var(--color-primary-dark);
+}
+
+section#contact .contact-right form .form-area .label-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  font-size: 2rem;
+  color: var(--color-dark);
+}
+
+section#contact .contact-right form .form-area .label-text::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid var(--color-primary-light);
+  left: 0;
+  top: -70%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+section#contact .contact-right form .form-area .label-text .content-text {
+  position: absolute;
+  top: 0;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }

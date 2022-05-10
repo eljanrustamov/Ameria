@@ -227,7 +227,7 @@ section#contact {
                     height: 100%;
                     width: 100%;
                     border: none;
-                    // outline: none;
+                    outline: none;
                     background-color: var(--color-white);
 
                     &:focus+.label-name .content-name,
@@ -237,7 +237,8 @@ section#contact {
                         color: var(--color-primary-dark);
                     }
 
-                    &:focus+.label-name::after {
+                    &:focus+.label-name::after,
+                    &:valid+.label-name::after {
                         transform: translateX(0%);
                     }
 
@@ -270,6 +271,70 @@ section#contact {
                     .content-name {
                         position: absolute;
                         bottom: 5px;
+                        transition: all .3s ease;
+                    }
+                }
+            }
+
+            .form-area {
+                position: relative;
+                font-size: 1.5rem;
+                font-weight: bold;
+                overflow: hidden;
+
+                textarea {
+                    resize: none;
+                    height: 100%;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    background-color: var(--color-white);
+                    vertical-align: text-bottom;
+                    padding-top: 80px;
+
+
+                    &:focus+.label-text .content-text,
+                    &:valid+.label-text .content-text {
+                        // transform: translateY(-120%);
+                        font-size: 1.5rem;
+                        color: var(--color-primary-dark);
+                    }
+
+                    &:focus+.label-text::after,
+                    &:valid+.label-text::after {
+                        transform: translatey(70%);
+                        border-bottom: 4px solid var(--color-primary-dark);
+
+                    }
+                }
+
+                .label-text {
+
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    pointer-events: none;
+                    // border-bottom: 1px solid var(--color-primary-light);
+                    font-size: 2rem;
+                    color: var(--color-dark);
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        border-bottom: 1px solid var(--color-primary-light);
+                        left: 0;
+                        top: -70%;
+                        // transform: translateX(-100%);
+                        transition: all .3s ease;
+                    }
+
+                    .content-text {
+                        position: absolute;
+                        top: 0;
                         transition: all .3s ease;
                     }
                 }

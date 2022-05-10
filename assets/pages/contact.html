@@ -90,10 +90,23 @@
                             <form action="">
                                 <h2 class="mb-4">Contact Us</h2>
 
-                                <div class="form-input">
-                                    <input type="text" name="name" class="pt-5">
+                                <div class="form-input mb-2">
+                                    <input type="text" name="name" class="pt-5" required>
                                     <label for="name" class="label-name">
                                         <span class="content-name">Full Name</span>
+                                    </label>
+                                </div>
+                                <div class="form-input mb-2">
+                                    <input type="text" name="email" class="pt-5" required>
+                                    <label for="email" class="label-name">
+                                        <span class="content-name">Email</span>
+                                    </label>
+                                </div>
+                                <div class="form-area mb-5">
+                                    <textarea class="" id="exampleFormControlTextarea1" rows="5" required
+                                        name="area"></textarea>
+                                    <label for="area" class="label-text">
+                                        <span class="content-text">Message ......</span>
                                     </label>
                                 </div>
 
@@ -109,9 +122,9 @@
                                     <textarea class="form-control form-element px-4" id="exampleFormControlTextarea1"
                                         rows="4" placeholder="Message ......"></textarea>
                                 </div> -->
-                                <!-- <div class="d-grid gap-2">
+                                <div class="d-grid gap-2">
                                     <button class="btn sub-btn" type="submit">Submit</button>
-                                </div> -->
+                                </div>
                             </form>
                         </div>
                     </div>
