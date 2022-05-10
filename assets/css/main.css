@@ -325,19 +325,20 @@ section#contact .contact-right form .form-area textarea {
   outline: none;
   background-color: var(--color-white);
   vertical-align: text-bottom;
-  padding-top: 80px;
 }
 
 section#contact .contact-right form .form-area textarea:focus + .label-text .content-text,
 section#contact .contact-right form .form-area textarea:valid + .label-text .content-text {
+  -webkit-transform: translateY(230%);
+          transform: translateY(230%);
   font-size: 1.5rem;
   color: var(--color-primary-dark);
 }
 
 section#contact .contact-right form .form-area textarea:focus + .label-text::after,
 section#contact .contact-right form .form-area textarea:valid + .label-text::after {
-  -webkit-transform: translatey(70%);
-          transform: translatey(70%);
+  -webkit-transform: translatey(60%);
+          transform: translatey(60%);
   border-bottom: 4px solid var(--color-primary-dark);
 }
 
@@ -359,7 +360,7 @@ section#contact .contact-right form .form-area .label-text::after {
   width: 100%;
   border-bottom: 1px solid var(--color-primary-light);
   left: 0;
-  top: -70%;
+  top: -60%;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }

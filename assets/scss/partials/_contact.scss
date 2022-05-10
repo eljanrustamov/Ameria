@@ -290,21 +290,20 @@ section#contact {
                     outline: none;
                     background-color: var(--color-white);
                     vertical-align: text-bottom;
-                    padding-top: 80px;
 
 
                     &:focus+.label-text .content-text,
                     &:valid+.label-text .content-text {
-                        // transform: translateY(-120%);
+                        transform: translateY(230%);
                         font-size: 1.5rem;
                         color: var(--color-primary-dark);
+
                     }
 
                     &:focus+.label-text::after,
                     &:valid+.label-text::after {
-                        transform: translatey(70%);
+                        transform: translatey(60%);
                         border-bottom: 4px solid var(--color-primary-dark);
-
                     }
                 }
 
@@ -327,7 +326,7 @@ section#contact {
                         width: 100%;
                         border-bottom: 1px solid var(--color-primary-light);
                         left: 0;
-                        top: -70%;
+                        top: -60%;
                         // transform: translateX(-100%);
                         transition: all .3s ease;
                     }
