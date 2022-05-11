@@ -1,5 +1,5 @@
 #hero {
-    height: 100vh;
+    // height: 100vh;
     // min-height: 700px;
     background-position: center;
     background-size: cover;
@@ -8,7 +8,7 @@
     z-index: 5;
   
     .cover {
-      height: 100vh;
+      height: 100%;
       width: 100vw;
       background-color: rgba(12, 35, 6, 0.4);
       position: absolute;
@@ -17,7 +17,7 @@
     }
   
     .hero-content {
-      padding: 10rem 0;
+      padding: 10.5rem 0;
       text-align: center;
       color: var(--color-white);
       line-height: 1.5;
