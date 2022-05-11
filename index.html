@@ -32,16 +32,124 @@
 
 <body>
 
-    <nav id="nav">
+    <!-- HEADER - NAV -->
+    <header>
         <div class="container">
-
+            <div class="row d-flex align-items-center">
+                <div class="col-6 col-lg-4 logo">
+                    <a href="#">AMERIA</a>
+                </div>
+                <div class="col-6 col-lg-8 side-menu d-flex justify-content-end">
+                    <div class="side-menu-toggle">
+                        <i class="bi bi-list open-btn"></i>
+                        <i class="bi bi-x-lg close-btn"></i>
+                    </div>
+                    <nav class="hidden">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./assets/pages/about.html">About</a></li>
+                            <li><a href="./assets/pages/contact.html">Contact</a></li>
+                            <li><a href="./assets/pages/hikes.html">Events</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-    </nav>
+    </header>
 
+    <!-- HERO -->
+    <section id="hero" style="background-image: url('./assets/img/azerbaijan-nature-with-flag.jpeg');">
+        <div class="cover"></div>
+        <div class="container">
+            <div class="hero-content">
+                <p>Welcome</p>
+                <h1>EXPLORE AZERBAIJAN <br> WITH US</h1>
+                <a href="./assets/pages/hikes.html">Discover Hike Places</a>
+            </div>
+        </div>
+    </section>
 
+    
+
+    <!-- FOOTER -->
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <div class="row gx-5 text-center align-items-center">
+
+                    <div class="col-12 mb-3 join">
+                        <h2 class="text-white footer-text">AMERIA</h2>
+                    </div>
+                    <hr>
+                    <div class="col-12 my-1 text-span">
+                        <span>Subscribe To Our Newsletter</span>
+                    </div>
+
+                    <div class="col-12  my-4 input-group input">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                            aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text text-white arrow-span" id="basic-addon2"><i
+                                    class="bi bi-arrow-right"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 my-4 footer-main">
+                        <div class="row gy-3 d-flex align-items-center justify-content-center">
+                            <a href="./assets/pages/about.html" class="col-sm-4">About Us</a>
+                            <a href="./assets/pages/hikes.html" class="col-sm-4">Hikes</a>
+                            <a href="./assets/pages/contact.html" class="col-sm-4">Contact</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-12 my-1 text-center align-items-center">
+
+                        <div class="mb-3 community">
+                            <span class="text-white">Community</span>
+                        </div>
+
+                        <ul class="footer-social-icons">
+
+                            <li>
+                                <i class="bi bi-twitter"></i>
+                            </li>
+
+                            <li>
+                                <i class="bi bi-facebook"></i>
+                            </li>
+
+                            <li>
+                                <i class="bi bi-linkedin"></i>
+                            </li>
+
+                            <li>
+                                <i class="bi bi-instagram"></i>
+                            </li>
+                        </ul>
+
+                        <div class="info-about-site mt-5">
+                            <span class="text-white">Ameria is optimized for traveling and getting
+                                to know the world better. Ameria is constantly
+                                reviewed to avoid errors in ticket prices, offers,
+                                or any part, but we cannot guarantee the accuracy of
+                                all content. <br> By using Ameia, you read and agree to our
+                                terms of use and privacy policy.</span>
+                        </div>
+                        <div class="info-about-site mt-3">
+                            <span class="text-white">
+                                Copyright 2022 by Refsnes Data. All Rights Reserved.
+                            </span>
+                        </div>
+                        <img class="footer-logo" src="../img/Logo.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 
     <!-- js -->
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/header.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

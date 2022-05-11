@@ -1,136 +1,133 @@
 #about {
-  background: linear-gradient(135deg, var(--color-primary-light), var(--color-white));
-  clip-path: polygon(0% 10%,
-      100% 0%,
-      100% 90%,
-      0% 100%);
-}
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-light),
+    var(--color-white)
+  );
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 
-
-.center-vertical {
-  display: flex;
-  width: 100%;
-  min-height: 100vh;
-  align-items: center;
-
-  .about-us-section {
+  .center-vertical {
+    display: flex;
     width: 100%;
-    padding: calc(5%+1.8rem) 0rem;
+    min-height: 100vh;
+    align-items: center;
 
-    .img-head {
-      position: relative;
-      overflow: hidden;
-      border-radius: 5px;
+    .about-us-section {
+      width: 100%;
+      padding: calc(5%+1.8rem) 0rem;
 
-      img {
-        width: 128%;
-        transition: transform.3s;
+      .img-head {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+
+        img {
+          width: 128%;
+          transition: transform.3s;
+        }
       }
     }
   }
-}
 
-.about-us-section .img-head:hover img {
-  transform: scale(1.2);
-}
+  .about-us-section .img-head:hover img {
+    transform: scale(1.2);
+  }
 
-.about-us-section .img-head::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0.5;
-}
+  .about-us-section .img-head::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+  }
 
-.about-us-section .text-head {
-  font-size: 1.56rem;
-  color: var(--color-dark);
-}
+  .about-us-section .text-head {
+    font-size: 1.56rem;
+    color: var(--color-dark);
+  }
 
-.about-us-section .break-small {
-  width: 5rem;
-  height: 0.2rem;
-  background-color: var(--color-primary-dark);
-}
+  .about-us-section .break-small {
+    width: 5rem;
+    height: 0.2rem;
+    background-color: var(--color-primary-dark);
+  }
 
-.about-us-section .text-para {
-  font-size: 1rem;
-  color: var(color-grey);
-}
+  .about-us-section .text-para {
+    font-size: 1rem;
+    color: var(color-grey);
+  }
 
-.about-us-section .box {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  text-align: center;
-  padding: 1.25rem 0rem;
-  position: relative;
-  overflow: hidden;
-  border-radius: 8%;
-  height: 9.5rem;
-}
+  .about-us-section .box {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1.25rem 0rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8%;
+    height: 9.5rem;
+  }
 
-.about-us-section .box i {
-  font-size: 2.7rem;
-}
+  .about-us-section .box i {
+    font-size: 2.7rem;
+  }
 
-.about-us-section .box h4 {
-  font-size: 0.9rem;
-}
+  .about-us-section .box h4 {
+    font-size: 0.9rem;
+  }
 
-.about-us-section .box p {
-  font-size: 1.4rem;
-}
+  .about-us-section .box p {
+    font-size: 1.4rem;
+  }
 
-.about-us-section .box::after,
-.about-us-section .box::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 6.25rem;
-  background-color: #fff5;
-  border-radius: 50%;
-  transition: transform 0.3s;
-}
+  .about-us-section .box::after,
+  .about-us-section .box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6.25rem;
+    background-color: #fff5;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
 
-.about-us-section .box::after {
-  left: -3.1rem;
-  top: -3.1rem;
-}
+  .about-us-section .box::after {
+    left: -3.1rem;
+    top: -3.1rem;
+  }
 
-.about-us-section .box::before {
-  right: -3.1rem;
-  bottom: -3.1rem;
-}
+  .about-us-section .box::before {
+    right: -3.1rem;
+    bottom: -3.1rem;
+  }
 
-.about-us-section .box:hover:after,
-.about-us-section .box:hover:before {
-  transform: scale(1.2);
-}
-
-.my-button {
-  width: 100%;
-  margin-left: 0 !important;
-  border-radius: 8px;
-  transition: all .3s ease;
-}
-
-@media screen and (max-width: 991px) {
-  .img-head {
-    clip-path: polygon(0% 18%,
-        100% 0%,
-        100% 100%,
-        0% 100%);
+  .about-us-section .box:hover:after,
+  .about-us-section .box:hover:before {
+    transform: scale(1.2);
   }
 
   .my-button {
-    transform: translateX(-223%);
+    width: 100%;
+    margin-left: 0 !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .my-button {
-    transform: translateX(-231%);
+  @media screen and (max-width: 991px) {
+    .img-head {
+      clip-path: polygon(0% 18%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .my-button {
+      transform: translateX(-223%);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .my-button {
+      transform: translateX(-231%);
+    }
   }
 }
